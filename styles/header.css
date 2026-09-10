@@ -1,0 +1,102 @@
+.header{
+    z-index: 100;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: rgb(27, 26, 26);
+}
+.left-section{
+    color: white;
+    display: flex;
+}
+.hamburger-icon{
+    height: 30px;
+    margin-left: 25px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.youtube-icon{
+    width: 120px;
+    height: 60px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.middle-section{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-left: 100px;
+    margin-right: 80px;
+    max-width: 600px;
+}
+.search{
+    flex:1;
+    display: flex;
+    position: relative;
+}
+.search-bar{
+    padding: 10px 40px 10px 16px;
+    width: 100%;
+    font-size: 20px;
+    background-color: black;
+    border: 1px solid rgb(57, 55, 55);
+    border-radius: 999px;
+    color: white;
+}
+.search img{
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 20px; 
+    height: 20px;
+}
+.microphone{
+    margin-left: 15px;
+    height: 30px;
+    cursor: pointer;
+}
+.right-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:white;
+    width: 220px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.plus-create{
+    width: 80px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 40px;
+    background-color: rgb(43, 42, 42);
+    padding-right: 20px;
+    padding-left: 14px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.plus-icon{
+    height: 25px;
+}
+.create-p{
+
+}
+.bell-pic{
+    height: 30px;
+    cursor: pointer;
+}
+.zuko-pic{
+    width: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
