@@ -10,44 +10,57 @@
     right: 0;
     background-color: rgb(27, 26, 26);
 }
+
 .left-section{
     display: flex;
     align-items: center;
 }
+
 .hamburger-icon{
     height: 30px;
     margin-left: 25px;
-    margin-top: 15px;
     cursor: pointer;
 }
+
 .youtube-icon{
     width: 120px;
     height: 60px;
     margin-left: 15px;
     cursor: pointer;
 }
+
 .middle-section{
     display: flex;
     align-items: center;
     flex: 1;
-    margin-left: 100px;
-    margin-right: 80px;
-    max-width: 600px;
+    margin-left: 60px;
+    margin-right: 60px;
+    max-width: 650px;
 }
+
 .search{
     flex:1;
     display: flex;
     position: relative;
 }
+
 .search-bar{
-    padding: 10px 40px 10px 16px;
+    box-sizing: border-box;
+    padding: 10px 50px 10px 16px;
     width: 100%;
-    font-size: 20px;
+    height: 42px;
+    font-size: 16px;
     background-color: black;
     border: 1px solid rgb(57, 55, 55);
     border-radius: 999px;
     color: white;
+    outline: none;
 }
+
+.search-bar:focus{
+    border-color: rgb(100, 100, 100);
+}
+
 .search img{
     position: absolute;
     right: 16px;
@@ -56,20 +69,23 @@
     width: 20px; 
     height: 20px;
 }
+
 .microphone{
     margin-left: 15px;
     height: 30px;
     cursor: pointer;
 }
+
 .right-section{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 20px;
     color:white;
     width: 220px;
     margin-right: 20px;
     flex-shrink: 0;
 }
+
 .plus-create{
     width: 80px;
     height: 40px;
@@ -79,23 +95,31 @@
     border: none;
     border-radius: 40px;
     background-color: rgb(43, 42, 42);
-    padding-right: 20px;
-    padding-left: 14px;
+    padding-left: 10px;
+    padding-right: 18px;
     cursor: pointer;
     font-size: 16px;
 }
+
+.plus-create:hover{
+    background-color: rgb(60, 59, 59);
+}
+
 .plus-icon{
     height: 25px;
 }
-.create-p{
 
+.create-p{
+    margin: 0;
 }
+
 .bell-pic{
     height: 30px;
     cursor: pointer;
 }
+
 .zuko-pic{
     width: 30px;
-    border-radius: 20px;
+    border-radius: 50%;
     cursor: pointer;
 }
