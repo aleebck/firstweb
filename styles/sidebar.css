@@ -3,12 +3,13 @@
     left: 0;
     bottom: 0;
     top: 60px;
-    background-color: rgb(27, 26, 26);
+    /*background-color: rgb(27, 26, 26);*/
+    background-color: rgb(18, 18, 18);
     width: 75px;
     font-family: Roboto, Arial;
     color: white;
     z-index: 100;
-    
+    overflow-y: auto;
 } 
 .sidebar-expanded {
     display: none;
