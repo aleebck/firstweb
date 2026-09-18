@@ -7,6 +7,7 @@ const videoPreview = [
         title: 'He didnt pay attention to the bullying until his girlfriend got',
         author: 'Manhwa Narratives',
         stats: '39K views &#183; 1 year ago',
+        hoverColor: 'rgb(96, 95, 45)',
     },
 
     {
@@ -16,6 +17,7 @@ const videoPreview = [
         title: 'Floating in riverie - Moayad Aljabal (Piano Cover)',
         author: 'Moayad Aljabal',
         stats: '100K views &#183; 2 year ago',
+        hoverColor: 'rgb(42, 56, 89)',
     },
 
     {
@@ -25,6 +27,7 @@ const videoPreview = [
         title: 'TOP 15 MOST BROKEN SOLO QUEUE HEROES',
         author: 'Xecution YT',
         stats: '16K views &#183; 2 days ago',
+        hoverColor: 'rgb(99, 55, 49)',
     },
 
     {
@@ -34,6 +37,7 @@ const videoPreview = [
         title: 'The French Defene Trap',
         author: 'Chess Expplained',
         stats: '100K views &#183;  3 weeks ago',
+        hoverColor: 'rgb(91, 68, 53)',
     },
 
     {
@@ -43,6 +47,7 @@ const videoPreview = [
         title: 'BARCELONA vs VALENCIA HIGHLIGTS',
         author: 'ESPN',
         stats: '250K views &#183; 1 day ago',
+        hoverColor: 'rgb(75, 56, 51)',
     },
 
     {
@@ -52,6 +57,7 @@ const videoPreview = [
         title: 'How 1 Person Solved A $1,000,000 Puzzle!',
         author: 'MrBeast 2',
         stats: '33M views &#183; 4 days ago',
+        hoverColor: 'rgb(86, 89, 60)',
     }
 ]
 
@@ -59,7 +65,7 @@ let videoHTML = '';
 
 videoPreview.forEach(function(video) {
     videoHTML += `
-        <div class="video-preview">
+        <div class="video-preview" style="--hover-color: ${video.hoverColor};">
             <div class="thumbnail-row">
                 <img class="video-photo" src="${video.image}">
                 <div class="video-time">${video.time}</div>

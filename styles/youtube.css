@@ -18,6 +18,17 @@ p{
 
 .video-preview{
     cursor: pointer;
+    position: relative;
+    border-radius: 14px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.video-preview:hover{
+    background-color: var(--hover-color);
+    padding: 12px;
+    margin: -12px;
+    transform: scale(1.05);
+    z-index: 10;
 }
 
 .thumbnail-row{
@@ -34,10 +45,6 @@ p{
     border-radius: 12px;
     display: block;
     transition: transform 0.2s;
-}
-
-.video-preview:hover .video-photo{
-    transform: scale(1.02);
 }
 
 .video-info-grid{
