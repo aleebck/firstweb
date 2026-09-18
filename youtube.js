@@ -1,3 +1,4 @@
+
 const videoPreview = [
     {
         image: 'thumbnails/hq720.webp',
@@ -83,4 +84,6 @@ videoPreview.forEach(function(video) {
     `
 });
 
-document.querySelector('.video-container').innerHTML = videoHTML;
+document
+    .querySelector('.video-container')
+    .innerHTML = videoHTML;
