@@ -9,6 +9,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <script src="https://unpkg.com/lucide@latest"></script>
+        <link 
+            rel="stylesheet" 
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+        />
     </head>
     <body>
         <div class="header">
@@ -18,11 +22,12 @@
             </div>
             <div class="middle-section">
                 <div class="search">
-                    <input class="search-bar" type="text" placeholder="Search">
+                    <input class="search-bar" type="text" placeholder="Search or ask question">
                     <img src="icons/magnifying-glass.webp">
                 </div>
-                <div>
+                <div class="mic-section">
                     <img class="microphone" src="icons/icons8-microphone-32.png" >
+                    <div class="description">Search with your voice</div>
                 </div>
             </div>
             <div class="right-section">
@@ -30,27 +35,98 @@
                     <img class="plus-icon" src="icons/icons8-plus-30.png">
                     <p class="create-p">Create</p>
                 </div>
-                <img class="bell-pic" src="icons/icons8-bell-24.png">
+                <div class="bell-container">
+                    <img class="bell-pic" src="icons/icons8-bell-24.png">
+                    <div class="tooltip">Notifications</div>
+                </div>
                 <img class="zuko-pic" src="icons/zuko.jpg" >
             </div>
         </div>
 
         <div class="sidebar">
-            <div class="sidebar-icon">
-                <img src="icons/icons8-home-48.png">
-                <div>Home</div>
+            <div class="sidebar-collapsed">
+                <div class="sidebar-collapsed-icon">
+                    <span class="material-symbols-outlined collapsed-icon">home</span>
+                    <div>Home</div>
+                </div>
+                <div class="sidebar-collapsed-icon">
+                    <img src="icons/shorts.webp">
+                    <div>Shorts</div>
+                </div>
+                <div class="sidebar-collapsed-icon">
+                    <span class="material-symbols-outlined collapsed-icon">subscriptions</span>
+                    <div>Subscriptions</div>
+                </div>
+                <div class="sidebar-collapsed-icon">
+                    <span class="material-symbols-outlined collapsed-icon">account_circle</span>
+                    <div>You</div>
+                </div>
             </div>
-            <div class="sidebar-icon">
-                <img src="icons/shorts.webp">
-                <div>Shorts</div>
-            </div>
-            <div class="sidebar-icon">
-                <img src="icons/icons8-youtube-30.png">
-                <div>Subscriptions</div>
-            </div>
-            <div class="sidebar-icon">
-                <img src="icons/icons8-user-48.png">
-                <div>You</div>
+            <div class="sidebar-expanded">
+                <div class="expanded-sidebar-row">
+                    <span class="material-symbols-outlined">home</span>
+                    <span>Home</span>
+                </div>
+                <div class="expanded-sidebar-row">
+                    <img src="icons/shorts.webp">
+                    <div>Shorts</div>
+                </div>
+                <div class="subscriptions">
+                    <div class="expanded-sidebar-channel you-title">
+                        <span>Subscriptions</span>
+                        <span class="material-symbols-outlined you-arrow">chevron_right</span>
+                    </div>
+                    <div class="expanded-sidebar-channel">
+                        <img src="channelpics/channels3_profile.jpg">
+                        <div>Xecution YT</div>
+                    </div>
+                    <div class="expanded-sidebar-channel">
+                        <img src="channelpics/channels4_profile (1).jpg">
+                        <div>Moayad Albajal</div>
+                    </div>
+                    <div class="expanded-sidebar-channel">
+                        <img src="channelpics/channels4_profile.jpg">
+                        <div>Manhwa Narratives</div>
+                    </div>
+                    <div class="expanded-sidebar-channel">
+                        <img src="channelpics/chess_profile.jpg">
+                        <div>Chess Expplained</div>
+                    </div>
+                </div>
+                <div class="you">
+                    <div class="expanded-sidebar-row you-title">
+                        <span>You</span>
+                        <span class="material-symbols-outlined you-arrow">chevron_right</span>
+                    </div>
+                    <div class="expanded-sidebar-row">
+                        <span class="material-symbols-outlined">account_box</span>
+                        <span>Your channel</span>
+                    </div>
+                    <div class="expanded-sidebar-row">
+                        <span class="material-symbols-outlined">history</span>
+                        <span>History</span>
+                    </div>
+                    <div class="expanded-sidebar-row">
+                        <span class="material-symbols-outlined">playlist_play</span>
+                        <span>Playlists</span>
+                    </div>
+                    <div class="expanded-sidebar-row">
+                        <span class="material-symbols-outlined">schedule</span>
+                        <span>Watch Later</span>
+                    </div>
+                    <div class="expanded-sidebar-row">
+                        <span class="material-symbols-outlined">thumb_up</span>
+                        <span>Liked videos</span>
+                    </div>
+                    <div class="expanded-sidebar-row">
+                        <span class="material-symbols-outlined">smart_display</span>
+                        <span>Your videos</span>
+                    </div>
+                    <div class="expanded-sidebar-row">
+                        <span class="material-symbols-outlined">download</span>
+                        <span>Downloads</span>
+                    </div>
+                </div>
             </div>
         </div>
 

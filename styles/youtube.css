@@ -4,9 +4,17 @@ body{
    padding: 90px 25px 40px 105px;
 }
 
+body.sidebar-open{
+    padding-left: 280px;
+}
 p{
     font-family: Roboto, Arial;
     margin:0;
+}
+
+.material-symbols-outlined {
+    color: white;
+    font-size: 28px;
 }
 
 .video-container{

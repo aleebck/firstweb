@@ -5,9 +5,36 @@
     top: 60px;
     background-color: rgb(27, 26, 26);
     width: 75px;
+    font-family: Roboto, Arial;
+    color: white;
+    z-index: 100;
+    
 } 
+.sidebar-expanded {
+    display: none;
+}
 
-.sidebar-icon{
+.sidebar-collapsed {
+    display: block;
+}
+
+.sidebar.open{
+    width: 250px;
+}
+
+.sidebar.open .sidebar-collapsed{
+    display: none;
+}
+
+.sidebar.open .sidebar-expanded{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+                    /*Sidebar collased design*/
+.sidebar-collapsed-icon{
     height: 80px;
     display: flex;
     justify-content: center;
@@ -17,17 +44,85 @@
     border-radius: 10px;
 }
 
-.sidebar-icon:hover{
+.sidebar-collapsed-icon  .collapsed-icon {
+    font-size: 35px;
+}
+
+.sidebar-collapsed-icon:hover{
     background-color: rgb(45, 45, 45);
 }
 
-.sidebar-icon img{
-    height: 35px;
-    margin-bottom: 10px;
+.sidebar-collapsed-icon img{
+    height: 30px;
 }
 
-.sidebar-icon div{
+.sidebar-collapsed-icon div{
     color: white;
     font-family: Roboto, Arial;
     font-size: 11px;
+}
+
+
+
+
+                    /*Sidebar expanded design*/
+.expanded-sidebar-row{
+    height: 48px;
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+    padding: 0 16px;
+
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.expanded-sidebar-row:hover {
+    background-color: rgb(45, 45, 45);
+}
+
+.expanded-sidebar-row .material-symbols-outlined {
+    font-size: 28px;
+}
+
+.expanded-sidebar-row img{
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+.you {
+    padding-top: 10px;
+    border-top: 1px solid rgb(60, 60, 60);
+}
+.you-title{
+    gap: 5px
+}
+.expanded-sidebar-row .you-arrow {
+    font-size: 20px;
+}
+
+.subscriptions{
+    border-top: 1px solid rgb(60, 60, 60);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+.expanded-sidebar-channel{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    gap: 20px;
+    padding: 0 16px;
+    border-radius: 10px;
+}
+.expanded-sidebar-channel img{
+    height: 40px;
+    border-radius: 50%;
+}
+.expanded-sidebar-channel:hover{
+    background-color: rgb(45, 45, 45);
 }

@@ -34,8 +34,8 @@ const videoPreview = [
         image: 'thumbnails/thumb4.avif',
         time: '25:48',
         profilePic: 'channelpics/chess_profile.jpg',
-        title: 'The French Defene Trap',
-        author: 'Chess Expplained',
+        title: 'The French Defense Trap',
+        author: 'Chess Explained',
         stats: '100K views &#183;  3 weeks ago',
         hoverColor: 'rgb(91, 68, 53)',
     },
@@ -93,3 +93,11 @@ videoPreview.forEach(function(video) {
 document
     .querySelector('.video-container')
     .innerHTML = videoHTML;
+
+const hamburger = document.querySelector('.hamburger-icon');
+const sidebar = document.querySelector('.sidebar');
+
+hamburger.addEventListener('click', function() {
+    sidebar.classList.toggle('open');
+    document.body.classList.toggle('sidebar-open');
+});
