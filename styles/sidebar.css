@@ -43,6 +43,7 @@
     flex-direction: column;
     cursor: pointer;
     border-radius: 10px;
+    gap: 8px;
 }
 
 .sidebar-collapsed-icon  .collapsed-icon {
