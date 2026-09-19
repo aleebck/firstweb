@@ -98,7 +98,7 @@
     border-top: 1px solid rgb(60, 60, 60);
 }
 .you-title{
-    gap: 5px
+    gap: 5px;
 }
 .expanded-sidebar-row .you-arrow {
     font-size: 20px;

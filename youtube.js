@@ -16,7 +16,7 @@ const videoPreview = [
         profilePic: 'channelpics/channels4_profile (1).jpg',
         title: 'Floating in riverie - Moayad Aljabal (Piano Cover)',
         author: 'Moayad Aljabal',
-        stats: '100K views &#183; 2 year ago',
+        stats: '100K views &#183; 2 years ago',
         hoverColor: 'rgb(42, 56, 89)',
     },
 
