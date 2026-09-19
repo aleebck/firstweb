@@ -5,7 +5,7 @@ const videoPreview = [
         image: 'thumbnails/hq720.webp',
         time: '4:28:35',
         profilePic: 'channelpics/channels4_profile.jpg',
-        title: 'He didnt pay attention to the bullying until his girlfriend got',
+        title: 'He didnt pay attention to the bullying until his girlfriend got beaten',
         author: 'Manhwa Narratives',
         subscribers: '30K subscribers',
         stats: '39K views &#183; 1 year ago',

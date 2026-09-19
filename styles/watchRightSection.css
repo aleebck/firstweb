@@ -3,8 +3,18 @@
 .video-recommendation{
     display: flex;
     gap: 10px;
-    margin-bottom: 12px;
+    margin-bottom: 4px;
     cursor: pointer;
+
+    padding: 8px;
+    border-radius: 10px;
+
+    transition: background-color 0.2s;
+}
+
+.video-recommendation:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.02);
 }
 
 .video-recommendation-thumbnail-container {
@@ -13,7 +23,7 @@
 }
 
 .video-recommendation-thumbnail{
-    width: 200px;
+    width: 260px;
     aspect-ratio: 16 / 9;
     object-fit: cover;
     border-radius: 8px;

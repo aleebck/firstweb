@@ -92,6 +92,7 @@ body{
     font-weight: 500;
 
     cursor: pointer;
+    transition: background-color color 0.2s;
 }
 
 .bell-button{
@@ -131,19 +132,38 @@ body{
     padding: 8px 12px;
     cursor: pointer;
 }
+.like-button.active {
+    font-variation-settings:'FILL' 1;
+}
+.dislike-button.active {
+    font-variation-settings:'FILL' 1;
+}
+
 .three-dots-button {
     background-color: rgb(39, 39, 39);
     padding: 8px;
     border-radius: 50%;
     cursor: pointer;
 }
+.subscribed {
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+.save-icon.active {
+    font-variation-settings:'FILL' 1;
+}
 
+/*************************    Video Description    **************************/
 .video-description {
     background-color: rgb(39, 39, 39);
     border-radius: 12px;
     padding: 12px;
     margin-top: 16px;
     cursor: pointer;
+    transition: background-color 0.2s;
+}
+.video-description:hover {
+    background-color: var(--hover-color);
 }
 
 .description-stats {
@@ -156,4 +176,57 @@ body{
     font-size: 14px;
     line-height: 20px;
     margin: 0;
+}
+
+
+/*************************    Comment Section    **************************/
+.comments-section {
+    margin-top: 24px;
+}
+
+.comments-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.comments-count {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sort-comments {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.add-comment {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.comment-profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.comment-input {
+    flex: 1;
+    background: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid rgb(80, 80, 80);
+    padding: 8px 0;
+    outline: none;
+    font-size: 14px;
+}
+
+.comment-input:focus {
+    border-bottom-color: white;
 }

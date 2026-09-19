@@ -4,7 +4,7 @@
     <title>Watch Video</title>
     <link rel="stylesheet" href="styles/watch.css">
     <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1">
       <link rel="stylesheet" href="styles/watchRightSection.css">
 </head>
 <body>
@@ -28,8 +28,8 @@
                 </div>
                 <div class="video-buttons-right">
                     <div class="thumb-up-down">
-                        <span class="material-symbols-outlined">thumb_up</span>
-                        <span class="material-symbols-outlined">thumb_down</span>
+                        <span class="material-symbols-outlined like-button">thumb_up</span>
+                        <span class="material-symbols-outlined dislike-button">thumb_down</span>
                     </div>
                     <div class="share-button">
                         <span class="material-symbols-outlined">reply</span>
@@ -40,8 +40,8 @@
                         <p>Ask</p>
                     </div>
                     <div class="save-button">
-                        <span class="material-symbols-outlined">bookmark</span>
-                        <p>Save</p>
+                        <span class="material-symbols-outlined save-icon">bookmark</span>
+                        <p class="save-text">Save</p>
                     </div>
                     <span class="material-symbols-outlined three-dots-button">more_horiz</span>
                 </div>
@@ -51,6 +51,25 @@
                 <p class="description-text">
                     This is the video description...
                 </p>
+            </div>
+            <div class="comments-section">
+                <div class="comments-header">
+                    <p class="comments-count">Comments</p>
+
+                    <div class="sort-comments">
+                        <span class="material-symbols-outlined">sort</span>
+                        <p>Sort by</p>
+                    </div>
+                </div>
+
+                <div class="add-comment">
+                    <img class="comment-profile-pic" src="icons/zuko.jpg">
+
+                    <input class="comment-input"
+                        type="text"
+                        placeholder="Add a comment...">
+                </div>
+
             </div>
         </div>
 
