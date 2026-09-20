@@ -228,9 +228,39 @@ body{
 .comment-actions {
     display: none;
     justify-content: flex-end;
+    align-items: center;
     gap: 10px;
     margin-top: 10px;
 }
+
+.cancel-comment,
+.submit-comment {
+    border: none;
+    border-radius: 20px;
+    padding: 9px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cancel-comment {
+    background-color: transparent;
+    color: white;
+}
+
+.cancel-comment:hover {
+    background-color: rgb(39, 39, 39);
+}
+
+.submit-comment {
+    background-color: rgb(62, 166, 255);
+    color: black;
+}
+
+.submit-comment:hover {
+    background-color: rgb(101, 186, 255);
+}
+
 .comment {
     display: flex;
     gap: 16px;

@@ -124,6 +124,11 @@ cancelButton.addEventListener('click', function() {
 let commentHTML ='';
 const submitButton = document.querySelector('.submit-comment');
 const commentsList = document.querySelector('.comments-list');
+
+const commentsCount = document.querySelector('.comments-count');
+let commentCount = 0;
+
+
 submitButton.addEventListener('click', function () {
     const commentText = commentInput.value.trim();
 
@@ -142,7 +147,14 @@ submitButton.addEventListener('click', function () {
         </div>
     `;
     commentsList.innerHTML = commentHTML;
-    
+
+    commentCount++;
+    if (commentCount === 1) {
+        commentsCount.innerText = `${commentCount} Comment`;
+    } else {
+        commentsCount.innerText = `${commentCount} Comments`;
+    }
+
     commentInput.value = '';
     commentActions.style.display = 'none';
 });
