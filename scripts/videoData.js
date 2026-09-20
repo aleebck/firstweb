@@ -53,7 +53,7 @@ const videoPreview = [
         image: 'thumbnails/yamal.avif',
         time: '14:25',
         profilePic: 'channelpics/espn.jpg',
-        title: 'BARCELONA vs VALENCIA HIGHLIGTS',
+        title: 'BARCELONA vs VALENCIA HIGHLIGHTS',
         author: 'ESPN',
         subscribers: '1.2M subscribers',
         stats: '250K views &#183; 1 day ago',
