@@ -113,6 +113,11 @@ body{
 
     cursor: pointer;
 }
+
+.share-icon {
+    transform: scaleX(-1);
+}
+
 .video-buttons-right p {
     margin: 0;
 }
