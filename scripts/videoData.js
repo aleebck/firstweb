@@ -48,7 +48,7 @@ const videoPreview = [
         title: 'The French Defense Trap',
         author: 'Chess Explained',
         subscribers: '976K subscribers',
-        stats: '100K views &#183;  3 weeks ago',
+        stats: '100K views &#183; 3 weeks ago',
         hoverColor: 'rgb(91, 68, 53)',
     },
 
@@ -84,7 +84,7 @@ const videoPreview = [
         video: 'videos/phone.mp4',
         time: '49:57',
         profilePic: 'channelpics/speedpfp.jpg',
-        title: 'Ishowpeed buys the new Iphone 18!',
+        title: 'IShowSpeed buys the new Iphone 18!',
         author: 'Live Speedy',
         subscribers: '55M subscribers',
         stats: '162K views &#183; 5 hours ago',

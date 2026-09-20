@@ -5,6 +5,9 @@ const videoId = params.get('id');
 const selectedVideo = videoPreview.find(function(video){
     return video.id == videoId;
 });
+if (!selectedVideo) {
+    window.location.href = 'youtube.html';
+}
 
 
 document.querySelector('.watch-video').src = selectedVideo.video;
@@ -15,13 +18,13 @@ document.querySelector('.subscriber-count').innerHTML = selectedVideo.subscriber
 document.querySelector('.description-stats').innerHTML = selectedVideo.stats;
 document.querySelector('.video-description').style.setProperty('--hover-color', selectedVideo.hoverColor);
 
-const recommnendedVideos = videoPreview.filter(function(video) {
+const recommendedVideos = videoPreview.filter(function(video) {
     return video.id != videoId;
 });
 
 let recommendationHTML = '';
 
-recommnendedVideos.forEach(function(video){
+recommendedVideos.forEach(function(video){
     recommendationHTML += `
         <div class="video-recommendation" style="--hover-color: ${video.hoverColor}" onclick="openVideo(${video.id})">
 
