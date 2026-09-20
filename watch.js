@@ -106,3 +106,17 @@ saveButton.addEventListener('click', function() {
         saveText.innerText = `Save`;
     }
 });
+
+
+const commentInput = document.querySelector('.comment-input');
+const commentActions = document.querySelector('.comment-actions');
+
+commentInput.addEventListener('focus', function() {
+    commentActions.style.display = 'flex';
+});
+
+const cancelButton = document.querySelector('.cancel-comment');
+cancelButton.addEventListener('click', function() {
+    commentInput.value = '';
+    commentActions.style.display = 'none';
+});
