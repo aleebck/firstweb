@@ -80,6 +80,8 @@ subscribeButton.addEventListener('click', function() {
     }
 });
 
+
+/*****************************     Buttons Interactive      **********************************/
 const likeButton = document.querySelector('.like-button');
 const dislikeButton = document.querySelector('.dislike-button');
 
@@ -108,47 +110,57 @@ saveButton.addEventListener('click', function() {
 });
 
 
+
+/********************************    Comment Section     *************************************/
+
 const commentInput = document.querySelector('.comment-input');
 const commentActions = document.querySelector('.comment-actions');
+const submitButton = document.querySelector('.submit-comment');
+const cancelButton = document.querySelector('.cancel-comment');
+const commentsList = document.querySelector('.comments-list');
+const commentsCount = document.querySelector('.comments-count');
 
+let commentHTML ='';
+let commentCount = 0;
+
+// Show Cancel + Comment buttons
 commentInput.addEventListener('focus', function() {
     commentActions.style.display = 'flex';
 });
 
-const cancelButton = document.querySelector('.cancel-comment');
+// Cancel comment
 cancelButton.addEventListener('click', function() {
     commentInput.value = '';
     commentActions.style.display = 'none';
 });
 
-let commentHTML ='';
-const submitButton = document.querySelector('.submit-comment');
-const commentsList = document.querySelector('.comments-list');
 
-const commentsCount = document.querySelector('.comments-count');
-let commentCount = 0;
+// Post comment function
+function postComment() {
 
-
-submitButton.addEventListener('click', function () {
     const commentText = commentInput.value.trim();
 
-    if(commentText === '')
-    {
+    if (commentText === '') {
         return;
     }
-    commentHTML += `
+
+    commentHTML = `
         <div class="comment">
+
             <img class="comment-profile-pic" src="icons/zuko.jpg">
 
             <div class="comment-content">
                 <p class="comment-author">Zuko</p>
                 <p class="comment-text">${commentText}</p>
             </div>
+
         </div>
-    `;
+    ` + commentHTML;
+
     commentsList.innerHTML = commentHTML;
 
     commentCount++;
+
     if (commentCount === 1) {
         commentsCount.innerText = `${commentCount} Comment`;
     } else {
@@ -157,4 +169,19 @@ submitButton.addEventListener('click', function () {
 
     commentInput.value = '';
     commentActions.style.display = 'none';
+}
+
+// Click Comment
+submitButton.addEventListener('click', function() {
+    postComment();
+});
+
+
+// Press Enter
+commentInput.addEventListener('keydown', function(event) {
+
+    if (event.key === 'Enter') {
+        postComment();
+    }
+
 });
