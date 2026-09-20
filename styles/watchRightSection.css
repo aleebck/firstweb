@@ -73,3 +73,34 @@
         width: 100%;
     }
 }
+
+@media (max-width: 600px) {
+
+    .side-videos-section {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .video-recommendation {
+        flex-direction: row;
+        padding: 6px 10px;
+        margin-bottom: 4px;
+    }
+
+    .video-recommendation-thumbnail-container {
+        width: 45%;
+    }
+
+    .video-recommendation-thumbnail {
+        width: 100%;
+    }
+
+    .video-recommendation-video-info {
+        flex: 1;
+    }
+
+    .video-recommendation:hover {
+        transform: none;
+        background-color: transparent;
+    }
+}

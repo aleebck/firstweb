@@ -206,3 +206,20 @@
     border-radius: 50%;
     cursor: pointer;
 }
+
+@media (max-width: 600px) {
+
+    .plus-create,
+    .bell-container,
+    .zuko-pic {
+        display: none;
+    }
+
+    .middle-section {
+        margin-left: auto;
+    }
+
+    .search-bar {
+        display: none;
+    }
+}

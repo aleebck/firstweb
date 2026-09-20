@@ -103,3 +103,13 @@ p{
     padding: 4px;
     border-radius: 4px;
 }
+
+@media (max-width: 600px) {
+    body {
+        padding: 90px 10px 40px 10px;
+    }
+
+    body.sidebar-open {
+        padding-left: 10px;
+    }
+}

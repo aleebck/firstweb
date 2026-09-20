@@ -128,3 +128,9 @@
 .expanded-sidebar-channel:hover{
     background-color: rgb(45, 45, 45);
 }
+
+@media (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+}
