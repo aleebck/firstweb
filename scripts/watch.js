@@ -6,7 +6,7 @@ const selectedVideo = videoPreview.find(function(video){
     return video.id == videoId;
 });
 if (!selectedVideo) {
-    window.location.href = 'youtube.html';
+    window.location.href = 'index.html';
 }
 
 
