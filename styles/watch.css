@@ -231,3 +231,30 @@ body{
     gap: 10px;
     margin-top: 10px;
 }
+.comment {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.comment-profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.comment-content {
+    flex: 1;
+}
+
+.comment-author {
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0 0 6px 0;
+}
+
+.comment-text {
+    font-size: 14px;
+    margin: 0;
+}

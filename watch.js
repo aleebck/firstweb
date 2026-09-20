@@ -120,3 +120,29 @@ cancelButton.addEventListener('click', function() {
     commentInput.value = '';
     commentActions.style.display = 'none';
 });
+
+let commentHTML ='';
+const submitButton = document.querySelector('.submit-comment');
+const commentsList = document.querySelector('.comments-list');
+submitButton.addEventListener('click', function () {
+    const commentText = commentInput.value.trim();
+
+    if(commentText === '')
+    {
+        return;
+    }
+    commentHTML += `
+        <div class="comment">
+            <img class="comment-profile-pic" src="icons/zuko.jpg">
+
+            <div class="comment-content">
+                <p class="comment-author">Zuko</p>
+                <p class="comment-text">${commentText}</p>
+            </div>
+        </div>
+    `;
+    commentsList.innerHTML = commentHTML;
+    
+    commentInput.value = '';
+    commentActions.style.display = 'none';
+});
