@@ -3,6 +3,7 @@ const videoPreview = [
     {
         id: 1,
         image: 'thumbnails/hq720.webp',
+        video: 'videos/manhwa.mp4',
         time: '4:28:35',
         profilePic: 'channelpics/channels4_profile.jpg',
         title: 'He didnt pay attention to the bullying until his girlfriend got beaten',
@@ -15,6 +16,7 @@ const videoPreview = [
     {
         id: 2,
         image: 'thumbnails/riverie.jpg',
+        video: 'videos/riverie.mp4',
         time: '4:37',
         profilePic: 'channelpics/channels4_profile (1).jpg',
         title: 'Floating in riverie - Moayad Aljabal (Piano Cover)',
@@ -27,6 +29,7 @@ const videoPreview = [
     {
         id: 3,
         image: 'thumbnails/hq720.avif',
+        video: 'videos/moba.mp4',
         time: '29:04',
         profilePic: 'channelpics/channels3_profile.jpg',
         title: 'TOP 15 MOST BROKEN SOLO QUEUE HEROES',
@@ -39,6 +42,7 @@ const videoPreview = [
     {
         id: 4,
         image: 'thumbnails/thumb4.avif',
+        video: 'videos/chess.mp4',
         time: '25:48',
         profilePic: 'channelpics/chess_profile.jpg',
         title: 'The French Defense Trap',
@@ -51,6 +55,7 @@ const videoPreview = [
     {
         id: 5,
         image: 'thumbnails/yamal.avif',
+        video: 'videos/football.mp4',
         time: '14:25',
         profilePic: 'channelpics/espn.jpg',
         title: 'BARCELONA vs VALENCIA HIGHLIGHTS',
@@ -63,6 +68,7 @@ const videoPreview = [
     {
         id: 6,
         image: 'thumbnails/mrbeast.avif',
+        video: 'videos/game.mp4',
         time: '26:59',
         profilePic: 'channelpics/mrbeastchannel.jpg',
         title: 'How 1 Person Solved A $1,000,000 Puzzle!',
@@ -70,5 +76,44 @@ const videoPreview = [
         subscribers: '31M subscribers',
         stats: '33M views &#183; 4 days ago',
         hoverColor: 'rgb(86, 89, 60)',
+    },
+
+    {
+        id: 7,
+        image: 'thumbnails/speed.avif',
+        video: 'videos/phone.mp4',
+        time: '49:57',
+        profilePic: 'channelpics/speedpfp.jpg',
+        title: 'Ishowpeed buys the new Iphone 18!',
+        author: 'Live Speedy',
+        subscribers: '55M subscribers',
+        stats: '162K views &#183; 5 hours ago',
+        hoverColor: 'rgb(88, 82, 65)',
+    },
+
+    {
+        id: 8,
+        image: 'thumbnails/spongebob.avif',
+        video: 'videos/cartoon.mp4',
+        time: '49:57',
+        profilePic: 'channelpics/spongebobpfp.jpg',
+        title: '4 HOURS of SpongeBob',
+        author: 'SpongeBob SquarePants Official',
+        subscribers: '3M subscribers',
+        stats: '56M views &#183; 1 year ago',
+        hoverColor: 'rgb(146, 149, 59)',
+    },
+
+    {
+        id: 9,
+        image: 'thumbnails/taylor.avif',
+        video: 'videos/singer.mp4',
+        time: '4:35',
+        profilePic: 'channelpics/taylorpfp.jpg',
+        title: 'Taylor Swift - cardigan',
+        author: 'Taylor Swift',
+        subscribers: '63M subscribers',
+        stats: '230M views &#183; 6 years ago',
+        hoverColor: 'rgb(53, 41, 15)',
     }
 ]

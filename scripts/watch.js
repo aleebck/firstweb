@@ -7,7 +7,7 @@ const selectedVideo = videoPreview.find(function(video){
 });
 
 
-document.querySelector('.watch-video').src = selectedVideo.image;
+document.querySelector('.watch-video').src = selectedVideo.video;
 document.querySelector('.watch-title').innerHTML = selectedVideo.title;
 document.querySelector('.profile-pic').src = selectedVideo.profilePic;
 document.querySelector('.author').innerHTML = selectedVideo.author;
