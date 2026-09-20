@@ -95,7 +95,7 @@ const videoPreview = [
         id: 8,
         image: 'thumbnails/spongebob.avif',
         video: 'videos/cartoon.mp4',
-        time: '49:57',
+        time: '4:05:57',
         profilePic: 'channelpics/spongebobpfp.jpg',
         title: '4 HOURS of SpongeBob',
         author: 'SpongeBob SquarePants Official',
